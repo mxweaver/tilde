@@ -24,6 +24,10 @@ export GPG_TTY=$(tty)
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
+# Man
+# Don't clear the screen after quitting a manual page.
+export MANPAGER='less -X'
+
 # Includes
 include () {
     [[ -f "$1" ]] && source "$1"
