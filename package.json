@@ -1,0 +1,19 @@
+{
+  "name": "tilde",
+  "version": "0.1.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayavera/tilde.git"
+  },
+  "author": "Maya Vera <maya@mayavera.me> (https://mayavera.me/)",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/mayavera/tilde/issues"
+  },
+  "homepage": "https://github.com/mayavera/tilde#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "eslint": "^5.4.0"
+  }
+}
