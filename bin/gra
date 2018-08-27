@@ -1,0 +1,9 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# grh - Git Reset All
+#
+# Clears the working version and any untracked files
+
+git add --all
+git reset --hard

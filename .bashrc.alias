@@ -1,0 +1,5 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+alias ls="ls -halpG"
+alias e="exit"

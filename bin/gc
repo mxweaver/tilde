@@ -1,0 +1,13 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# gc - Git Commit
+#
+# Commits the tracked changes with a message.
+# If no message is provided, 'wip' is used.
+#
+# Examples:
+#   gc "Did the things." // Creates a commit named "Did the things."
+#   gc // Creates a commit named "wip"
+
+git commit -m "${1:-wip}"

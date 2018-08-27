@@ -1,0 +1,8 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# gr - Git Reset
+#
+# Clears the working version.
+
+git reset --hard

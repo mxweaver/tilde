@@ -1,0 +1,23 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# ding runs a command, then plays a sound based on its success or failure.
+# It will also proxy the command's return code.
+#
+# Examples: 
+#   ding cat foo.txt
+
+SUCCESS_SOUND=/System/Library/Sounds/Purr.aiff
+FAILURE_SOUND=/System/Library/Sounds/Sosumi.aiff
+
+$@
+RESULT=$?
+
+if [ $RESULT == 0 ]
+then
+    afplay $SUCCESS_SOUND &
+else
+    afplay $FAILURE_SOUND &
+fi
+
+exit $RESULT

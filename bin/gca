@@ -1,0 +1,12 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# gca - Git Commit All
+#
+# Adds all changes to the staging version and commits with the given message
+# If no message is given, "wip" will be used for the commit message
+#
+# Example: gca "Did the things."
+
+git add --all
+gc

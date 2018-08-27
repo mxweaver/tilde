@@ -1,0 +1,8 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# gp - Git Push
+#
+# Pushes the current branch to origin.
+
+git push -u

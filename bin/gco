@@ -1,0 +1,11 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# gco - Git Checkout
+#
+# Checks out the given branch/commit/etc.
+# If no target is defined, `master` is used.
+#
+# Example: gco my-branch
+
+git checkout ${1:-master}

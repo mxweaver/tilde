@@ -1,0 +1,14 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# gub - Git Update Branch
+#
+# Rebases the current branch to the latest version of some branch.
+# If no branch is provided, "master" is assumed as the source.
+
+CURRENT_BRANCH=$(git name-rev --name-only HEAD)
+
+git checkout ${1:-master}
+git pull
+git checkout $CURRENT_BRANCH
+git rebase master

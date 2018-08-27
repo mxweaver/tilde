@@ -1,0 +1,8 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# grbc - Git Rebase Continue
+#
+# Continues the current rebase.
+
+git rebase --continue

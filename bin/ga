@@ -1,0 +1,14 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# ga - Git Add
+#
+# Stages a file for commit.
+# If no file is provided, all files in the directory (recursively) will be staged.
+#
+# Examples: 
+#   ga README.md // Stages a file called README.md
+#   
+#   ga // Stages all files
+
+git add ${1:---all}

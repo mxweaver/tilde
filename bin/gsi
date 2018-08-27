@@ -1,0 +1,9 @@
+#!/bin/bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# gsi - Git Stash (In)
+#
+# Stashes all code in the current directory (including untracked files).
+
+git add --all
+git stash
