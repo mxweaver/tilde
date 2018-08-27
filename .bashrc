@@ -11,6 +11,9 @@ export SHELL_SESSION_HISTORY=0
 
 export CLICOLOR=1
 
+# Editor
+export EDITOR='vim'
+
 # Git
 source git-completion.bash
 
