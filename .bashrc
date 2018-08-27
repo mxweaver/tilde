@@ -1,15 +1,15 @@
 #!/bin/bash
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
-# ------------------------ Binaries ----------------------
+# Binaries
 export PATH=$PATH:~/bin
 
-# ------------------------ History -----------------------
+# History
 export HISTSIZE=
 export HISTFILESIZE=
 export SHELL_SESSION_HISTORY=0
 
-# export CLICOLOR=1
+export CLICOLOR=1
 
 # Git
 source git-completion.bash
@@ -22,7 +22,6 @@ export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
 # Includes
-
 include () {
     [[ -f "$1" ]] && source "$1"
 }
