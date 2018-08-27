@@ -1,0 +1,16 @@
+[user]
+	name = Maya Vera
+[push]
+	default = current
+[core]
+	excludesfile = /Users/maya/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/maya/.stCommitMsg
+[gpg]
+	program = gpg
