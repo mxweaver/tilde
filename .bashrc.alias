@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
 alias ls="ls -halpG"
 alias e="exit"
+alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
