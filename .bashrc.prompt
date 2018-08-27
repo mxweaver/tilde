@@ -1,8 +1,6 @@
 #!/bin/bash
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
-PROMPT_COMMAND=__prompt_command
-
 __prompt_command() {
     local EXIT="$?"
     PS1="\n\[\033[36m\]\u\[\033[m\]"
@@ -26,3 +24,5 @@ __prompt_command() {
 
     PS1+="> ${RCol}"
 }
+
+PROMPT_COMMAND=__prompt_command
