@@ -4,4 +4,4 @@
 .PHONY: build
 
 default:
-	@pushd Public > /dev/null; make; popd > /dev/null
+	@rid Public make
