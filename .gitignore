@@ -1,8 +1,8 @@
-.DS_Store
 
 */
 /*
 !.gitignore
+.DS_Store
 
 !.bash_profile
 !.bashrc
@@ -21,3 +21,4 @@
 !.aws/
 !.dlv/
 !Public**/**
+!Makefile
