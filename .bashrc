@@ -24,6 +24,9 @@ export GPG_TTY=$(tty)
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
+# Node
+export PATH=$PATH:~/node_modules/.bin
+
 # Man
 # Don't clear the screen after quitting a manual page.
 export MANPAGER='less -X'
