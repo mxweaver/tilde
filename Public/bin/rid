@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# rid - Run In Directory
+#
+# Runs a given command in a given directory
+
+pushd $1 > /dev/null
+
+${@:2}
+RESULT=$?
+
+popd > /dev/null
+
+exit $RESULT
