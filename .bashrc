@@ -2,7 +2,7 @@
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
 # Binaries
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/Public/bin
 
 # History
 export HISTSIZE=
