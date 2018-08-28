@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
 # README.md.gen.sh generates a README that displays all of the gifs in this directory.
