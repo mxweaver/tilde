@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# gs - Git Rebase Continue
+#
+# A shorthand for "git rebase --continue"
+
+git rebase --continue
