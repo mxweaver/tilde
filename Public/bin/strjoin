@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+# strjoin joins its parameters into a string
+
+IFS="$1"
+shift
+echo "$*"
