@@ -20,5 +20,6 @@
 !README.md
 !.aws/
 !.dlv/
+!.gnupg/
 !Public**/**
 !Makefile
