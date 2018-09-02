@@ -15,10 +15,11 @@
 !.tmux.conf
 !.vimrc
 !.zshrc
+!Makefile
 !package.json
 !package-lock.json
 !README.md
+!setup.sh
 !.aws/
 !.dlv/
 !Public**/**
-!Makefile
