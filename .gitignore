@@ -18,6 +18,7 @@
 !Makefile
 !package.json
 !package-lock.json
+!Brewfile
 !README.md
 !setup.sh
 !.aws/

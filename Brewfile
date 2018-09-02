@@ -1,0 +1,35 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+brew "sqlite"
+brew "python"
+brew "awscli"
+brew "base64"
+brew "cmake"
+brew "go"
+brew "dep"
+brew "ffmpeg"
+brew "gnupg"
+brew "imagemagick"
+brew "mas"
+brew "nginx", restart_service: true
+brew "node"
+brew "postgresql", restart_service: true
+brew "protobuf"
+brew "transmission"
+brew "tree"
+brew "watch"
+brew "wget"
+brew "wput"
+brew "youtube-dl"
+cask "google-chrome"
+cask "google-cloud-sdk"
+cask "ngrok"
+cask "transmission"
+cask "vagrant"
+cask "virtualbox"
+mas "1Password", id: 443987910
+mas "Be Focused", id: 973134470
+mas "GIPHY CAPTURE", id: 668208984
+mas "Slack", id: 803453959
