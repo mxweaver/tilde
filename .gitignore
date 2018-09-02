@@ -23,4 +23,5 @@
 !setup.sh
 !.aws/
 !.dlv/
+!.gnupg/
 !Public**/**
