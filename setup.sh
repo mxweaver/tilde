@@ -23,6 +23,9 @@ brew install \
   youtube-dl
 
 brew cask install \
+  google-chrome \
+  google-cloud-sdk \
+  ngrok \
   transmission \
   vagrant \
   virtualbox
