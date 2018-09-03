@@ -19,6 +19,7 @@ brew "postgresql", restart_service: true
 brew "protobuf"
 brew "transmission"
 brew "tree"
+brew "unrar"
 brew "watch"
 brew "wget"
 brew "wput"
