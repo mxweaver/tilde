@@ -39,3 +39,9 @@ include () {
 include .bashrc.local
 include .bashrc.alias
 include .bashrc.prompt
+
+case "$(uname -s)" in
+	Linux)
+		include .bashrc.linux
+		;;
+esac

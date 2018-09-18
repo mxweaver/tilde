@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+
+alias ls="ls -halp --color=auto"
