@@ -41,6 +41,9 @@ include .bashrc.alias
 include .bashrc.prompt
 
 case "$(uname -s)" in
+	Darwin)
+		include .bashrc.mac
+		;;
 	Linux)
 		include .bashrc.linux
 		;;
