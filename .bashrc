@@ -27,14 +27,12 @@ export PATH=$PATH:$GOPATH/bin
 # Node
 export PATH=$PATH:~/node_modules/.bin
 
-# Man
-# Don't clear the screen after quitting a manual page.
-export MANPAGER='less -X'
-
 # Includes
 include () {
-    [[ -f "$1" ]] && source "$1"
+    [[ -f "$1" ]] && . "$1"
 }
+
+include /usr/local/etc/bash_completion
 
 include .bashrc.local
 include .bashrc.alias
