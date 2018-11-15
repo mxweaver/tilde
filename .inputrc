@@ -1,0 +1,8 @@
+# tab should cycle through auto-complete options
+# TAB: menu-complete
+
+# shift-tab should cycle through auto-complete options in reverse
+# "\e[Z": "\e-1\C-i"
+
+# "\e[A": history-search-backward
+# "\e[B": history-search-forward

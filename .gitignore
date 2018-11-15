@@ -12,7 +12,9 @@
 !.bashrc.prompt
 !.eslintrc*
 !.gitconfig
+!.inputrc
 !.npmrc
+!.profile.prompt
 !.slackrc
 !.tmux.conf
 !.vimrc

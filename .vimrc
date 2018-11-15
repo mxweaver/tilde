@@ -52,7 +52,8 @@ set showmatch
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
-" No annoying sound on errors
+" disable bell on errors and invalid inputs
+set belloff=all
 set noerrorbells
 set novisualbell
 set t_vb=
@@ -64,7 +65,7 @@ syntax enable
 colorscheme desert
 set background=dark
 
-"set utf8 as standard encoding and en_US as the standard language
+" set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
 " Use Unix as the standard file type
@@ -96,7 +97,7 @@ map j gj
 map k gk
 
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
-map <space> /
+" map <space> /
 map <c-space> ?
 
 " Always show the status line
@@ -104,3 +105,27 @@ set laststatus=2
 
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ (%l,%c)
+
+" enable mouse input
+set mouse=niv
+
+" set spellcheck language to english
+set spelllang=en_us
+
+" use <space> for <leader>
+let mapleader=" "
+
+nnoremap <Leader><Leader> <C-^>
+
+let g:go_fmt_command = "goimports"
+
+set cursorline
+
+" j
+let g:go_highlight_fields = 1
+let g:go_highlight_types = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_function_calls = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_generate_tags = 1

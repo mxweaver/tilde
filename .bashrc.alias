@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
-alias e="exit"
+alias e='exit'
+alias less='less -r'
