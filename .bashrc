@@ -27,6 +27,9 @@ export PATH=$PATH:$GOPATH/bin
 # Node
 export PATH=$PATH:~/node_modules/.bin
 
+# Perl
+eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+
 # Includes
 include () {
     [[ -f "$1" ]] && . "$1"
@@ -34,15 +37,15 @@ include () {
 
 include /usr/local/etc/bash_completion
 
-include .bashrc.local
-include .bashrc.alias
-include .bashrc.prompt
+include ~/.bashrc.local
+include ~/.bashrc.alias
+include ~/.bashrc.prompt
 
 case "$(uname -s)" in
 	Darwin)
-		include .bashrc.mac
+		include ~/.bashrc.mac
 		;;
 	Linux)
-		include .bashrc.linux
+		include ~/.bashrc.linux
 		;;
 esac
