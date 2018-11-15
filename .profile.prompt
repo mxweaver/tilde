@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+# .profile.prompt overwrites the PROMPT_COMMAND with something like:
+# maya ~/Public/gifs
+# >
+
+__prompt_command() {
+    local EXIT="$?"
+    PS1="\n\[\033[36m\]\u\[\033[m\]"
+
+    if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+        PS1+="@\[\033[1;35m\]\h\[\033[00m\]"
+    fi
+
+    PS1+=" \[\033[35;1m\]\w\[\033[m\]\\n"
+
+    local RCol='\[\e[0m\]'
+
+    local Red='\[\e[0;31m\]'
+    local Gre='\[\e[0;32m\]'
+
+    if [ $EXIT != 0 ]; then
+        PS1+="${Red}"
+    else
+        PS1+="${Gre}"
+    fi
+
+    PS1+="> ${RCol}"
+}
+
+PROMPT_COMMAND=__prompt_command
