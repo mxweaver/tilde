@@ -13,6 +13,7 @@
 !.eslintrc*
 !.gitconfig
 !.inputrc
+!.iterm
 !.npmrc
 !.profile.prompt
 !.slackrc
