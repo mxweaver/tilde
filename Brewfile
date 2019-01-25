@@ -30,7 +30,3 @@ cask "ngrok"
 cask "transmission"
 cask "vagrant"
 cask "virtualbox"
-mas "1Password", id: 443987910
-mas "Be Focused", id: 973134470
-mas "GIPHY CAPTURE", id: 668208984
-mas "Slack", id: 803453959
