@@ -28,7 +28,11 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:~/node_modules/.bin
 
 # Perl
-eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+if [ -d "$HOME/perl5" ]; then
+	if [ -d "$HOME/perl5/lib/perl5" ]; then
+		eval "$(perl -I$HOME/perl5/lib/perl5 -Mlocal::lib=$HOME/perl5)"
+	fi
+fi
 
 # Includes
 include () {
