@@ -24,12 +24,12 @@
 
 __prompt_command() {
     local EXIT="$?"
-    local red='\e[31m'
-    local green='\e[32m'
-    local yellow='\e[33m'
-    local magenta='\e[35m'
-    local cyan='\e[36m'
-    local reset='\e[0m'
+    local red='\[\e[31m\]'
+    local green='\[\e[32m\]'
+    local yellow='\[\e[33m\]'
+    local magenta='\[\e[35m\]'
+    local cyan='\[\e[36m\]'
+    local reset='\[\e[0m\]'
     local user='\u'
     local break='\n'
 
