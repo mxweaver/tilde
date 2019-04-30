@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
-.PHONY: setup dump build
+.PHONY: setup dump
 default: setup
 
 setup:
@@ -10,5 +10,3 @@ setup:
 dump:
 	brew bundle dump --force
 
-build:
-	@( cd Public && make )
