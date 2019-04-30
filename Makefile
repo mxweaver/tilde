@@ -2,7 +2,7 @@
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
 .PHONY: setup dump build
-default: build
+default: setup
 
 setup:
 	@./setup.sh
