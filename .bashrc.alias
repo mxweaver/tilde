@@ -6,3 +6,4 @@ alias less='less -r'
 alias h=history
 alias hg='history | grep'
 alias ga='git add --all'
+alias gac='git add --all && git commit -m'
