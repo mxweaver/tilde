@@ -12,7 +12,6 @@
 !.bashrc.prompt
 !.eslintrc*
 !.gitconfig
-!.inputrc
 !.iterm
 !.npmrc
 !.profile.prompt
