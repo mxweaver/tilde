@@ -5,3 +5,4 @@ alias e=exit
 alias less='less -r'
 alias h=history
 alias hg='history | grep'
+alias ga='git add --all'
