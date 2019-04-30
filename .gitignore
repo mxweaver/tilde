@@ -25,6 +25,7 @@
 !Brewfile
 !README.md
 !setup.sh
+!setup-mac.sh
 !.aws/
 !.dlv/
 !.gnupg/
