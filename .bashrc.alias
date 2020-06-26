@@ -16,3 +16,5 @@ alias m='master'
 alias deletebranches='git branch | grep -v "master" | xargs git branch -D'
 alias nodeclear='if [ -d node_modules ]; then rm -Rf node_modules; fi'
 alias i='npm i'
+alias python=/usr/local/bin/python3
+alias pip=pip3
