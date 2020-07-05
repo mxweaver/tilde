@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 # (c) Copyright 2018 Maya Vera (mayavera.me)
 
+source "`brew --prefix`/etc/grc.bashrc"
+
 alias ls="ls -halpG"
 alias chrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome"
+
+alias colourify="$GRC -es --colour=auto"
+alias diff='colourify diff'
