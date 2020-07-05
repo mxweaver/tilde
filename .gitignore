@@ -30,6 +30,6 @@
 !.dlv/
 !.gnupg/
 !Public**/**
-!macos-terminal-settings.terminal
+!macos-terminal-profiles
 !vscode-extensions.list
 !vscode-settings.json
