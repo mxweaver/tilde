@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
+#
+# Bash Configuration
 # (c) Copyright 2018 Maya Vera (mayavera.me)
+#
 
 # Binaries
 export PATH=$PATH:~/Public/bin
@@ -20,7 +23,7 @@ source git-completion.bash
 # GPG
 export GPG_TTY=$(tty)
 
-# Go 
+# Go
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
@@ -28,25 +31,15 @@ export PATH=$PATH:$GOPATH/bin
 export NVM_DIR="$HOME/.nvm"
 [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && . "$(brew --prefix)/opt/nvm/nvm.sh"
 [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && . "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm"
-# Includes
-include () {
-    [[ -f "$1" ]] && . "$1"
-}
 
+# Bash Completion
 include /usr/local/etc/bash_completion
 
-include ~/.bashrc.local
-include ~/.bashrc.alias
-include ~/.bashrc.prompt
+# Alias
+include ~/.aliasrc
 
-case "$(uname -s)" in
-	Darwin)
-		include ~/.bashrc.mac
-		;;
-	Linux)
-		include ~/.bashrc.linux
-		;;
-esac
+# Prompt
+include ~/.bash.prompt
 
-include ~/.bashrc.nvm
-
+# Platform-Dependent Configuration
+platform ~/.bashrc.mac ~/.bashrc.linux

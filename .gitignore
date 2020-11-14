@@ -1,9 +1,19 @@
-
+# ignore all folders
 */
-/*
-!.gitignore
-.DS_Store
 
+# ignore all files
+/*
+
+# include all ignore files in lower directories
+!.gitignore
+
+# include these directories
+!.aws/
+!.dlv/
+!.gnupg/
+!Public**/**
+
+# include these files
 !.bash_profile
 !.bashrc
 !.bashrc.alias
@@ -18,18 +28,20 @@
 !.slackrc
 !.tmux.conf
 !.vimrc
+!.zlogin
+!.zlogout
+!.zprofile
+!.zprofile
+!.zshenv
 !.zshrc
-!Makefile
-!package.json
-!package-lock.json
+!.zshrc
 !Brewfile
-!README.md
-!setup.sh
-!setup-mac.sh
-!.aws/
-!.dlv/
-!.gnupg/
-!Public**/**
 !macos-terminal-profiles
+!Makefile
+!package-lock.json
+!package.json
+!README.md
+!setup-mac.sh
+!setup.sh
 !vscode-extensions.list
 !vscode-settings.json
