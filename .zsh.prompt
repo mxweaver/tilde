@@ -1,0 +1,81 @@
+#!/usr/bin/env zsh
+#
+# ZSH Prompt
+# (c) Copyright 2020 Maya Vera (mayavera.me)
+#
+# sets the command prompt to:
+# <user>[@<host>] [current_directory] [current_git_branch_name]
+#
+# For example:
+#
+# (inside a non-git folder)
+# maya ~/Public/gifs
+# >
+#
+# (in a git folder)
+# maya ~/projects/linux master
+# >
+#
+# (on a remote server)
+# maya@gibson /trash/plsdontlookhere/53cr345
+# >
+#
+# Behaviour:
+#   - if the current session is using ssh, <host> will be present
+#   - if the current directory is a git repository, <current_git_brtanch_name> will be present
+#   - if the current directory has uncommitted files, <current_git_branch_name> will be red, otherwise it will be green
+#
+
+precmd() {
+    local break=$'\n'
+    # local chevron='•'
+    # local chevron='»'
+    # local chevron='Ȣ'
+    # local chevron='ɸ'
+    # local chevron='ʘ'
+    # local chevron='ф'
+    # local chevron='Ѻ'
+    # local chevron='҂'
+    # local chevron='֍'
+    # local chevron='؎'
+    local chevron='߷'
+
+    # PS1="${break}${yellow}${user}${reset}"
+    PROMPT=''
+
+    # Padding from last output
+    PROMPT+="${break}"
+
+    # Username
+    PROMPT+="%n"
+
+    # Hostname
+    if [ -n "$SSH_CLIENT" ] || [ -n "$SSH_TTY" ]; then
+        PROMPT+="@%F{magenta}%m%f"
+    fi
+
+    # if [ -x "$(command -v git)" ]; then
+    #     if [[ -e "$(git rev-parse --git-dir 2> /dev/null)" ]]; then
+    #         if [ -z "$(git status --porcelain)" ]; then
+    #             PS1+=${green}
+    #         else
+    #             PS1+=${red}
+    #         fi
+
+    #         local branch=$(git symbolic-ref --short HEAD)
+    #         PS1+=" ${branch}${reset}"
+    #     fi
+    # fi
+
+    # Current Directory
+    PROMPT+=" %F{cyan}%~%f "
+
+    # Line Break
+    PROMPT+="${break}"
+
+    # History Number
+    PROMPT+="%h "
+
+    # Chevron
+    PROMPT+="%(?.%F{green}.%F{red})${chevron}%f  "
+}

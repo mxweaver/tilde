@@ -30,13 +30,17 @@
 !.slackrc
 !.tmux.conf
 !.vimrc
+
+# include zsh configs
 !.zlogin
 !.zlogout
 !.zprofile
 !.zprofile
+!.zsh.prompt
 !.zshenv
 !.zshrc
 !.zshrc
+
 !Brewfile
 !macos-terminal-profiles
 !Makefile
