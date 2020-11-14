@@ -13,13 +13,15 @@
 !.gnupg/
 !Public**/**
 
-# include these files
+# include bash configs
+!.bash.scripts
 !.bash_profile
 !.bashrc
 !.bashrc.alias
 !.bashrc.linux
 !.bashrc.mac
 !.bashrc.prompt
+
 !.eslintrc*
 !.gitconfig
 !.iterm

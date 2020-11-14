@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#
+# Bash Scripts
+# .bash.scripts
+# (c) Copyright 2020 Maya Weaver (maya@mayavera.me)
+#
+
+# include <path>
+# Executes a file if it exists.
+# @aram <path> the path of the file to execute
+#
+include () {
+    [[ -f "$1" ]] && . "$1"
+}
