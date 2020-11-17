@@ -14,7 +14,6 @@ setopt CORRECT_ALL
 # History
 HISTFILE=${ZDOTDIR:-$HOME}/.zsh_history # set history file
 setopt EXTENDED_HISTORY # store timestamps with history entries
-setopt SHARE_HISTORY # share history between sessions
 setopt APPEND_HISTORY # append to history, rather than overwrite
 setopt INC_APPEND_HISTORY # adds commands as they are run, not at shell exit
 setopt HIST_EXPIRE_DUPS_FIRST # expire duplicate commands first
