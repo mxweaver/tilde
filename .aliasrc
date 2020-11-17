@@ -1,0 +1,63 @@
+#!/usr/bin/sh
+#
+# Aliases
+# (c) Copyright 2018 Maya Vera (mayavera.me)
+#
+
+# Exit
+alias -g e=exit
+
+# Less
+alias -g less='less -r'
+
+# History
+alias -g h=history
+alias -g hg='history | grep'
+
+# Git
+alias -g ga='git add --all'
+alias -g gac='git add --all && git commit -m'
+alias -g gp='git push'
+alias -g gpf='git push --force'
+alias -g gpo='git push --set-upstream origin'
+alias -g gs='git status'
+alias -g dotenv='export $(cat .env | xargs)'
+alias -g master='git checkout master'
+alias -g m='master'
+alias -g deletebranches='git branch | grep -v "master" | xargs git branch -D'
+
+# Node
+alias -g nodeclear='if [ -d node_modules ]; then rm -Rf node_modules; fi'
+alias -g i='npm i'
+
+# Python
+alias -g python=/usr/local/bin/python3
+alias -g pip=pip3
+
+# Work
+alias -g work='cd ~/work/provantagex/ui && nvm use 10'
+alias -g w=work
+alias -g workstart='work && yarn start --backend=INT'
+alias -g ws='workstart'
+alias -g worktest='work && yarn test'
+alias -g wt='worktest'
+alias -g workcode='work && code .'
+alias -g wc='workcode'
+alias -g worklint='work && yarn test:lint'
+alias -g wl=worklint
+alias -g worklintwatch='worklint --watch'
+alias -g wlw=worklintwatch
+alias -g worklintquiet='worklint --quiet'
+alias -g wlq=worklintquiet
+alias -g worklintquietwatch='worklintquiet --watch'
+alias -g wlqw=worklintquietwatch
+alias -g worktsc='work && yarn test:tsc'
+alias -g wt=worktsc
+alias -g worktscwatch='worktsc --watch'
+alias -g wtw=worktscwatch
+
+# Renaming
+alias -g lowext='rename "s/\.([^.]+)$/.\L\$1/"'
+alias -g romfixcountry='rename "s/\(([UuEeJj])\)/[\U\$1]/"'
+alias -g romfixcountrypd='rename "s/[\(\[]([Pp][Dd])[\)\]]/[Pd]/"'
+alias -g romfixtagspacing='rename "s/\] +\[/][/"'

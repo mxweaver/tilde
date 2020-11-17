@@ -13,6 +13,9 @@
 !.gnupg/
 !Public**/**
 
+# include alias configs
+!.aliasrc
+
 # include bash configs
 !.bash.scripts
 !.bash_profile
